@@ -1,0 +1,21 @@
+body {
+    background-color: black; /* Change body code and reverse engineer if necedssary to implement -jc */
+    margin: 0;
+    overflow: hidden;
+}
+
+.snowflake {
+    position: absolute;
+    color: #756f6f; /* Light shade of gray */
+    font-size: .8em; /* Smaller font size */
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-10vh); /* Start position at top of viewport */
+    }
+    100% {
+        transform: translateY(110vh); /* End position beyond bottom of viewport */
+    }
+}
